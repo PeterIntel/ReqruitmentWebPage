@@ -1,0 +1,330 @@
+/* font-family: "OpenSansRegular"; */
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+    src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "OpenSansLight"; */
+@font-face {
+    font-family: "OpenSansLight";
+    src: url("../fonts/OpenSansLight/OpenSansLight.eot");
+    src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"),
+    url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "OpenSansBold"; */
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSansBold/OpenSansBold.eot");
+    src: url("../fonts/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"),
+    url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* font-family: "OpenSansLightItalic"; */
+@font-face {
+    font-family: "OpenSansLightItalic";
+    src: url("../fonts/OpenSansLightItalic/OpenSansLightItalic.eot");
+    src: url("../fonts/OpenSansLightItalic/OpenSansLightItalic?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansLightItalic/OpenSansLightItalic.woff") format("woff"),
+    url("../fonts/OpenSansLightItalic/OpenSansLightItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+
+header,
+main,
+footer {
+    font-family: OpenSans;
+    font-size: 18px;
+}
+
+h1,
+h2,
+#address h4 {
+    text-transform: uppercase;
+    color: #2c78ea !important;
+    font-family: OpenSans !important;
+    font-size: 1.5rem !important;
+}
+
+nav {
+    background: rgba(184, 67, 137, .3);
+    z-index: 1030;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.nav-link,
+.nav-link:hover,
+.nav-link:focus {
+    color: #fff;
+    padding: 25px 0;
+    font-size: .9rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    text-decoration: underline !important;
+}
+
+.navbar-toggler {
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255) !important;
+    margin: 10px;
+    float: right;
+}
+
+header > nav > button > span {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    margin: 4px 0;
+}
+
+.header-text {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+    color: #fff;
+    font-family: OpenSans;
+    top: 18vw;
+    font-size: 3.8vw;
+    line-height: 1.5;
+    letter-spacing: -2px;
+    z-index: 1000;
+}
+
+.background-header {
+    max-width: 100%;
+    width: 100%;
+}
+
+.nav-justified {
+    width: 80% !important;
+}
+
+.nav-item {
+    float: none;
+}
+
+.nav-link {
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+main h2 {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.about-programm {
+    background-image: url('../img/teach-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    text-align: center;
+    margin-bottom: 115px;
+}
+
+.about-programm h1 {
+    padding: 66px 0;
+}
+
+.about-programm p {
+    margin-top: -28px;
+    font-size: .9rem;
+}
+
+.degree {
+    font-family: OpenSansLight;
+    margin-top: 20px;
+}
+
+#teachers a {
+    text-decoration: none;
+}
+
+div.circle-avatar {
+    max-width: 48%;
+    width: 48%;
+    padding-top: 48%;
+    height: auto;
+    margin-left: 24.2%;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project {
+    background: #f3f3f5;
+    padding-bottom: 110px;
+}
+
+.project h2 {
+    margin-top: 60px;
+    margin-bottom: 51px;
+}
+
+.news {
+    margin-bottom: 110px;
+}
+
+.news h2 {
+    margin-top: 53px;
+    margin-bottom: 53px;
+}
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+    left: -50px;
+    top: 95px;
+}
+
+.owl-next {
+    right: -50px;
+    left: auto;
+}
+
+.owl-prev img,
+.owl-next img {
+    width: 37px;
+}
+
+.news-block img {
+	width: 100%;
+    max-width: 100%;
+    padding-bottom: 15px;
+}
+
+.item a,
+.item p,
+.news-block a,
+.news-block p,
+.degree + div {
+    font-family: OpenSans;
+    font-style: italic;
+    text-align: left;
+}
+
+.degree + div {
+    text-align: center;
+    margin-top: 4px;
+}
+
+.item a,
+.item a:hover,
+.news-block a,
+.news-block a:hover,
+.degree + div {
+    font-size: 1.3rem;
+    color: #2c78ea;
+}
+
+.item p,
+.news-block p {
+    padding-top: 20px;
+    line-height: 1rem;
+}
+
+.item p,
+.news-block p,
+.degree {
+    font-size: .9rem;
+    color: #4d4d4d;
+}
+
+.item a {
+    margin-top: 5px;
+}
+
+#map {
+    position: relative;
+}
+
+#address {
+    position: absolute;
+    z-index: 100;
+    background: rgb(255, 255, 255);
+    width: 200px;
+    margin-left: 42%;
+    margin-top: 30px;
+    padding-left: 10px;
+    border: 3px solid #2298e3;
+}
+
+#address h4 {
+    font-size: 1.3rem !important;
+    padding-top: 10px;
+}
+
+#address p {
+    font-size: .8rem;
+    font-family: OpenSans;
+    line-height: 1rem;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #2c78ea;
+    padding: 10px 0;
+}
+
+footer div.rights {
+    color: #fff;
+    font-family: OpenSans;
+    font-size: .75rem;
+    padding-top: 15px;
+}
+
+footer ul {
+    margin-bottom: 0;
+}
+
+.fa-stack-2x {
+    color: #fff;
+}
+
+.fa-facebook {
+    color: #3b5999;
+}
+
+.fa-vk {
+    color: #436eab;
+}
+
+.fa-google-plus {
+    color: #dd4b39;
+}
+
+.fa-envelope {
+    color: #b1b1b1;
+}
+
+@media (min-width: 768px) {
+    .nav-item {
+        display: table-cell;
+        width: 1%;
+    }
+    .nav-link {
+        margin-bottom: 0;
+    }
+}
