@@ -6,38 +6,88 @@
     <title>Recruitment</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Kozina">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/bootstrap.css">
     <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light fixed">
+        <nav class="absolute">
             <div class="container">
-                <!-- Brand -->
-                <a class="navbar-brand" href="#">Работа студентам</a>
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Links -->
-                <div class="collapse navbar-collapse justify-content-end" id="nav-content">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Вход</a>
-                            <a class="nav-link" href="#">Регистраация</a>
-                        </li>
-                    </ul>
+                <div class="row">
+                    <a href="#" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 content-center logo">
+                        <div class="logo-top">Работа студентам</div>
+                        <img src="img/logo.png" alt="logo" />
+                        <div class="logo-bottom">recruit.aforehand.com.ua</div>
+                    </a>
+                    <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ml-auto">
+                        <div class="row justify-content-end">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 content-center sign-in-up">
+                                <a href="#">Вход</a> </br>
+                                <a class="italic-font" href="#">Регистраация</a>
+                            </div>
+                        </div>
+                        <div class="row hiring-panel" style="border:1px solid black">
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <a class="component find-accociate" href="#">Найти </br> сотрудников</a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <a class="component find-work" href="#">Найти </br> работу</a>
+                            </div>
+                            <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12 ml-auto">
+                                <a class="component add-resume" href="#">Добавить резюме</a>
+                            </div>
+                        </div>
+                        <div class="row search-panel" style="border:1px solid black">
+                            <div class="col-lg-7 col-md-6 col-sm-12">
+                                <input class="search-position" type="text" placeholder="кассир, менеджер ..." />
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                <div class="dropdown search-place">
+                                    <a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                        Вся Украина
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Вся Украина</a>
+                                        <a class="dropdown-item" href="#">Киев</a>
+                                        <a class="dropdown-item" href="#">Харьков</a>
+                                        <a class="dropdown-item" href="#">Львов</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="col-lg-2 col-md-2 col-sm-12">
+                                <div class="search-button">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5 col-md-7">
+                                <a href="#" class="component show-vacancies">Горячие вакансии</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5 col-md-7">
+                                <a href="#" class="component show-vacancies">Все вакансии</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5 col-md-7">
+                                <a href="#" class="component show-vacancies">Вакансии по категориям</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
         <img class="background-header" src="img/header-background.png" alt="background">
     </header>
     <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

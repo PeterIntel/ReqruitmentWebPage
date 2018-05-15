@@ -42,15 +42,56 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "OpenSansItalic";
+    src: url("../fonts/OpenSansItalic/OpenSansItalic?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansItalic/OpenSansItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+
 header,
 main,
 footer {
-    font-family: OpenSans;
+    /* font-family: OpenSans; */
     font-size: 18px;
 }
 
+/* .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand{
+    color: white;
+}
+
+header .navbar-light .navbar-nav .nav-link{
+    font-size: 16px;
+    text-align: center;
+    padding: unset;
+}
+
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus,
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: #fff;
+    text-decoration: underline !important;
+}
+
+span.icon-bar {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    margin: 4px 0;
+}
+
+.navbar-toggler {
+    border: 1px solid rgb(255, 255, 255) !important;
+} */
+
 .bold-font{
     font-family: OpenSansBold;
+}
+
+.italic-font{
+    font-family: OpenSansItalic;
 }
 
 nav {
@@ -65,8 +106,182 @@ nav {
 .background-header {
     max-width: 100%;
     width: 100%;
+    min-height: 500px;
 }
 
-.fixed{
-    position: fixed;
+.absolute{
+    position: absolute;
 }
+
+.content-center{
+    text-align: center;
+}
+
+nav>div.container{
+    margin-top:20px;
+}
+
+.logo, .sign-in-up a{
+    color:white;
+}
+
+.logo-top{
+    font-family: OpenSansBold;
+    font-size: 26px;
+}
+
+.logo:hover{
+    color:white;
+    text-decoration: none;
+}
+
+.component{
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+}
+
+.add-resume{
+    color: #9C507C;
+    font-family: OpenSansBold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.find-accociate{
+    color: #9C507C;
+    font-family: OpenSans;
+    font-size: 20px;
+    padding: 5px;
+    line-height: 20px;
+}
+
+.find-work{
+    background-color: #AA438A;
+    color: white;
+    border: 1px solid white;
+    font-family: OpenSans;
+    font-size: 20px;
+    padding: 5px;
+    line-height: 19px;
+}
+
+.hiring-panel, .search-panel{
+    margin-top: 55px;
+}
+
+.find-work:hover, .find-accociate:hover, .add-resume:hover{
+    color: #9C507C;
+    background-color: white;
+}
+
+.dropdown-toggle::after{
+    display: none;
+}
+
+.search-panel>div:first-child, .search-panel>div:nth-child(2){
+    padding-right: 0;
+}
+
+.search-panel>div:nth-child(2), .search-panel>a:nth-child(3){
+    padding-left: 0;
+}
+
+.search-position{
+    width: 100%;
+    padding: 10px;
+    border: unset;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color:#B89FB5;
+}
+
+.search-place{
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-left: 1px solid gray;
+    color:#B89FB5;
+}
+
+.search-button{
+    text-align: center;
+    padding: 3px;
+    background-color: #AA438A;
+    font-size: 1.5em;
+    color:white;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.row.search-panel ~ div.row{
+    margin-top: 30px;
+}
+
+.show-vacancies{
+    color: #9C507C;
+    padding: 10px;
+    text-align: left;
+}
+
+.show-vacancies:hover{
+    color: #9C507C;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .hiring-panel>div:nth-child(3){
+        margin-top: 20px;
+    }
+
+    .hiring-panel>div:nth-child(2){
+        margin-top: 20px;
+    }
+
+    .search-panel>div:first-child, .search-panel>div:nth-child(2){
+        padding-right: 15px;
+    }
+    
+    .search-panel>div:nth-child(2), .search-panel>a:nth-child(3){
+        padding-left: 15px;
+        margin-top: 20px;
+    }
+
+    .search-panel>div>div, .search-panel>div>input,  .search-panel>a>div{
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hiring-panel>div:nth-child(3){
+        margin-top: 20px;
+    }
+
+    .hiring-panel>div:nth-child(2){
+        margin-top: 20px;
+    }
+
+    .search-panel>div:first-child, .search-panel>div:nth-child(2){
+        padding-right: 15px;
+    }
+    
+    .search-panel>div:nth-child(2), .search-panel>a:nth-child(3){
+        padding-left: 15px;
+        margin-top: 20px;
+    }
+
+    .search-panel>div>div, .search-panel>div>input,  .search-panel>a>div{
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .hiring-panel>div:nth-child(3){
+        margin-top: 20px;
+    }
+}
+
+/* header{
+    background: url("../img/header-background.png") no-repeat center center;
+} */
