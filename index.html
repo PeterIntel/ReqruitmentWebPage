@@ -30,7 +30,7 @@
                                 <a class="italic-font" href="#">Регистраация</a>
                             </div>
                         </div>
-                        <div class="row hiring-panel" style="border:1px solid black">
+                        <div class="row hiring-panel">
                             <div class="col-lg-3 col-md-6 col-sm-12">
                                 <a class="component find-accociate" href="#">Найти </br> сотрудников</a>
                             </div>
@@ -41,7 +41,7 @@
                                 <a class="component add-resume" href="#">Добавить резюме</a>
                             </div>
                         </div>
-                        <div class="row search-panel" style="border:1px solid black">
+                        <div class="row search-panel">
                             <div class="col-lg-7 col-md-6 col-sm-12">
                                 <input class="search-position" type="text" placeholder="кассир, менеджер ..." />
                             </div>
@@ -66,7 +66,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-5 col-md-7">
-                                <a href="#" class="component show-vacancies">Горячие вакансии</a>
+                                <a href="#hot-vacancies" class="component show-vacancies">Горячие вакансии</a>
                             </div>
                         </div>
                         <div class="row">
@@ -76,7 +76,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-5 col-md-7">
-                                <a href="#" class="component show-vacancies">Вакансии по категориям</a>
+                                <a href="#categories" class="component show-vacancies">Вакансии по категориям</a>
                             </div>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h4 class="header">Горячие вакансии</h4>
+                        <h4 id="hot-vacancies" class="header">Горячие вакансии</h4>
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -292,7 +292,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h4 class="header">Вакансии по категориям</h4>
+                        <h4 id="categories" class="header">Вакансии по категориям</h4>
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -488,30 +488,36 @@
     </main>
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-5 col-sm-7 col-7">
                     <h5>recruit.aforehead.com.ua</h5>
                     <ul>
-                        <li>Услуги и сервисы</li>
-                        <li>Контакты</li>
-                        <li>Пользоваьльское соглашение</li>
+                        <li><a href="#">Услуги и сервисы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Пользоваьльское соглашение</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
-                    <h5>recruit.aforehead.com.ua</h5>
+                <div class="col-lg-4 col-md-3 col-sm-5 col-7">
+                    <h5>Работодателю</h5>
                     <ul>
-                        <li>Услуги и сервисы</li>
-                        <li>Контакты</li>
-                        <li>Пользоваьльское соглашение</li>
+                        <li><a href="#">Добавить вакансию</a></li>
+                        <li><a href="#">Поиск резюме</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3"></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-7">
+                    <h5>Соискатателю</h5>
+                    <ul>
+                        <li><a href="#">Добавить резюме</a></li>
+                        <li><a href="#">Найти работу</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-scroll.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 
