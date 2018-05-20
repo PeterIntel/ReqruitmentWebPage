@@ -53,8 +53,18 @@
 header,
 main,
 footer {
-    /* font-family: OpenSans; */
+    font-family: OpenSans;
     font-size: 18px;
+}
+
+.categories .circle-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    vertical-align: middle;
+    border: 2px solid #8A8C7F;
 }
 
 /* .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand{
@@ -95,12 +105,12 @@ span.icon-bar {
 }
 
 nav {
-    background: rgba(184, 67, 137, .3);
-    z-index: 1030;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
+    padding-bottom: 130px;
+}
+
+header{
+    background: url("../img/header-background.png") no-repeat center center;
+    background-size: cover;
 }
 
 .background-header {
@@ -109,16 +119,8 @@ nav {
     min-height: 500px;
 }
 
-.absolute{
-    position: absolute;
-}
-
 .content-center{
     text-align: center;
-}
-
-nav>div.container{
-    margin-top:20px;
 }
 
 .logo, .sign-in-up a{
@@ -282,6 +284,78 @@ nav>div.container{
     }
 }
 
+.hot-vacancies .header, .categories .header{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #9C507C;
+    margin-top: 20px;
+}
+
+.vacancy{
+    margin-bottom: 20px;
+}
+
+.vacancy>div>a{
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+.vacancy>div:nth-child(2)>span{
+    font-size: 14px;
+}
+
+.vacancy>div:last-child>span{
+    font-size: 14px;
+    color: gray;
+}
+
+.hot-vacancies span{
+    display: inline-flex;
+    align-items: center;
+}
+
+.hot-vacancies span i{
+    font-size: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.hot-vacancies div>a.show-more{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: OpenSansBold;
+    color:#007BFF;
+    padding: 10px 0 10px 0;
+    border: 1px solid #007BFF;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hot-vacancies div>a.show-more:hover{
+    color:#007BFF;
+    text-decoration: underline;
+}
+
+.category{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.category a{
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+.category a>i{
+    margin-right: 5px;
+}
+
+footer{
+    background: url("../img/footer-background.png") no-repeat center center;
+    background-size: cover;
+}
 /* header{
     background: url("../img/header-background.png") no-repeat center center;
 } */
