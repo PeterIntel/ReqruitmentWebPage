@@ -111,17 +111,20 @@ header{
 
 .component{
     width: 100%;
-    background-color: white;
     border-radius: 5px;
     display: block;
     text-align: center;
+    background-color: white;
+    color: #AA438A;
+    border: 1px solid white;
 }
 
 .add-resume{
     color: #9C507C;
     font-family: OpenSansBold;
-    font-size: 20px;
+    font-size: 19px;
     padding: 10px;
+    border: 1px solid white;
 }
 
 .find-accociate{
@@ -129,13 +132,11 @@ header{
     font-family: OpenSans;
     font-size: 20px;
     padding: 5px;
-    line-height: 20px;
+    line-height: 19px;
+    border: 1px solid white;
 }
 
 .find-work{
-    background-color: #AA438A;
-    color: white;
-    border: 1px solid white;
     font-family: OpenSans;
     font-size: 20px;
     padding: 5px;
@@ -147,8 +148,8 @@ header{
 }
 
 .find-work:hover, .find-accociate:hover, .add-resume:hover{
-    color: #9C507C;
-    background-color: white;
+    color: white;
+    background-color: #AA438A;
 }
 
 .dropdown-toggle::after{
@@ -198,10 +199,12 @@ header{
     color: #9C507C;
     padding: 10px;
     text-align: left;
+    border: 1px solid white;
 }
 
 .show-vacancies:hover{
-    color: #9C507C;
+    background-color: #AA438A;
+    color: white;
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
